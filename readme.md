@@ -1,0 +1,36 @@
+# Gobblers – Partie Bot
+
+Ce fichier décrit le fonctionnement du bot dans le jeu Gobblers et explique les niveaux de difficulté disponibles.
+
+## Niveaux de difficulté du bot
+
+Le bot peut être configuré avec différents niveaux pour ajuster la difficulté du jeu :
+
+1. Facile (BOT_EASY)  
+   - Le bot joue aléatoirement.  
+   - Il choisit de poser ou de déplacer une pièce de manière valide.  
+   - Ne suit aucune stratégie offensive ou défensive.  
+   - Utile pour débuter ou tester le jeu.
+
+2. Difficile (BOT_HARD)  
+   - Le bot joue de manière stratégique.  
+   - Offensive : tente de compléter une ligne pour gagner dès que possible.  
+   - Défensive : bloque les alignements imminents du joueur humain.  
+   - Sinon, il place la plus grande pièce disponible sur une case valide.  
+   - Représente un vrai challenge pour le joueur.
+
+## Fonctionnement du bot
+
+- Le bot peut poser une pièce depuis sa réserve ou déplacer une pièce déjà sur le plateau.  
+- Il ne pose jamais une pièce sur une case où une pièce de même taille existe déjà.  
+- Le bot utilise des fonctions internes pour :
+  - Détecter les menaces (2 pièces du joueur humain alignées et une case vide).  
+  - Détecter les opportunités de victoire (2 pièces du bot alignées et une case vide).  
+
+## Fichiers concernés
+
+- "bot.h" – Déclarations des fonctions et types pour le bot.  
+- "bot.cpp" – Implémentation du bot (facile et difficile).  
+- "main.cpp" – Intègre le bot dans la partie, permet de choisir la difficulté.  
+
+
