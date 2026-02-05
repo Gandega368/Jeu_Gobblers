@@ -1,6 +1,30 @@
-# Gobblers – Partie Bot
-
+# Gobblers – Présentation du projet
 Ce fichier décrit le fonctionnement du bot dans le jeu Gobblers et explique les niveaux de difficulté disponibles.
+Le jeu se joue sur un plateau 3×3 et oppose un joueur humain contre un bot disposant de plusieurs niveaux de difficulté.
+Le projet a été conçu avec une architecture modulaire, séparant clairement la logique du jeu et l’interface utilisateur en console.
+## Règles du jeu
+Chaque joueur possède des pièces de trois tailles :
+SMALL
+MEDIUM
+LARGE
+Une pièce plus grande peut recouvrir une pièce plus petite, mais il est interdit de poser ou déplacer une pièce sur une autre de même taille.
+
+Un joueur gagne lorsqu’il aligne 3 de ses pièces visibles :
+en ligne
+en colonne
+ou en diagonale
+## Fonctionnalités
+✔️ Mode joueur contre bot
+
+✔️ Plusieurs niveaux de difficulté pour le bot
+
+✔️ Affichage du plateau en console
+
+✔️ Légende et couleurs pour distinguer les joueurs
+
+✔️ Détection automatique de victoire
+
+✔️ Gestion robuste des erreurs (coups invalides)
 
 ## Niveaux de difficulté du bot
 
