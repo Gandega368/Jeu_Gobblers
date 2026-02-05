@@ -46,9 +46,11 @@ Le bot peut être configuré avec différents niveaux pour ajuster la difficult�
   - Détecter les opportunités de victoire (2 pièces du bot alignées et une case vide).  
 
 ## Fichiers concernés
-
+- "board.h" / "board.cpp" - logique du plateau et règles du jeu
+- "piece.h" / "piece.cpp" - gestion des pièces
+- "cell.h" / "cell.cpp" - gestion des cases
 - "bot.h" – Déclarations des fonctions et types pour le bot.  
 - "bot.cpp" – Implémentation du bot (facile et difficile).  
-- "main.cpp" – Intègre le bot dans la partie, permet de choisir la difficulté.  
+- "main.cpp" – Interface utilisateur et boucle de jeu, permet de choisir la difficulté du jeu.  
 
 
