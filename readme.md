@@ -49,8 +49,17 @@ Le bot peut être configuré avec différents niveaux pour ajuster la difficult�
 - "board.h" / "board.cpp" - logique du plateau et règles du jeu
 - "piece.h" / "piece.cpp" - gestion des pièces
 - "cell.h" / "cell.cpp" - gestion des cases
-- "bot.h" – Déclarations des fonctions et types pour le bot.  
-- "bot.cpp" – Implémentation du bot (facile et difficile).  
-- "main.cpp" – Interface utilisateur et boucle de jeu, permet de choisir la difficulté du jeu.  
+- "config.h" / constantes globales du jeu
+- "bot.h" – Déclarations des fonctions et types pour le bot  
+- "bot.cpp" – Implémentation du bot (facile et difficile)  
+- "main.cpp" – Interface utilisateur et boucle de jeu, permet de choisir la difficulté du jeu
 
+## Compilation (Makefile)
 
+Le projet utilise un **Makefile** pour automatiser la compilation.
+
+### Commandes disponibles
+
+- Compiler le projet :
+```bash
+make
